@@ -1,0 +1,86 @@
+.el-message-box {
+  width: 360px;
+  padding-bottom: 16px;
+}
+
+.el-message-box__content {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
+  position: relative;
+  bottom: 10px;
+}
+
+.el-message-box__header {
+  padding-top: 15px !important;
+
+  .el-message-box__headerbtn {
+    i.el-message-box__close:before {
+      font-family: 'iconfont' !important;
+      content: "\e6da" !important;
+    }
+
+    i {
+      position: relative;
+    }
+
+    i.el-message-box__close:hover::after {
+      content: "\5173\95ED";
+      display: inline-block;
+      padding: 5px 0px;
+      border: 1px solid #ddd;
+      /* border-radius: 5px; */
+      position: absolute;
+      top: 28px;
+      color: #333;
+      left: -20px;
+      z-index: 999;
+      width: 55px;
+      background: #fff;
+      font-size: 12px;
+    }
+  }
+}
+
+.el-message-box__btns {
+  padding-top: 8px;
+  text-align: center;
+}
+
+.el-message-box__message p {
+  margin-bottom: 6px;
+}
+
+.el-message-box__btns button:nth-child(2) {
+  margin-left: 30px;
+  background: #42a0f8;
+  border-color: #42a0f8;
+}
+
+.el-message-box__btns .danger {
+  background: #f05468 !important;
+  border-color: #f05468 !important;
+}
+
+//新建文件夹类名 add-file
+.add-file {
+  .el-message-box__header {
+    padding-top: 15px !important;
+    background: #eff4f5;
+    height: 48px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+
+  .el-message-box__message p {
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+
+  .el-message-box__input {
+    padding: 0;
+
+    .el-message-box__errormsg {
+      min-height: 0;
+    }
+  }
+}

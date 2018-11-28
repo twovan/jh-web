@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>electronic-case-management</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+
+    #app {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    #loader-wrap {}
+
+    .loader,
+    .loader:after {}
+
+    .loader {
+      text-align: center;
+    }
+
+    .loader .circular {
+      height: 42px;
+      width: 42px;
+      -webkit-animation: loading-rotate 2s linear infinite;
+      animation: loading-rotate 2s linear infinite;
+    }
+
+    .loader .circular {
+      height: 42px;
+      width: 42px;
+      animation: loading-rotate 2s linear infinite
+    }
+
+    .loader .path {
+      animation: loading-dash 1.5s ease-in-out infinite;
+      stroke-dasharray: 90, 150;
+      stroke-dashoffset: 0;
+      stroke-width: 2;
+      stroke: #409eff;
+      stroke-linecap: round
+    }
+
+    .loader i {
+      color: #409eff
+    }
+
+    @keyframes loading-rotate {
+      to {
+        transform: rotate(1turn)
+      }
+    }
+
+    @keyframes loading-dash {
+      0% {
+        stroke-dasharray: 1, 200;
+        stroke-dashoffset: 0
+      }
+      50% {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -40px
+      }
+      to {
+        stroke-dasharray: 90, 150;
+        stroke-dashoffset: -120px
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div id="loader-wrap">
+      <div class="loader">
+        <svg viewBox="25 25 50 50" class="circular">
+          <circle cx="50" cy="50" r="20" fill="none" class="path"></circle>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+</body>
+
+</html>

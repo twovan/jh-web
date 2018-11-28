@@ -1,0 +1,19 @@
+.el-message {
+  // min-width: 150px !important;
+  min-width: 0 !important;
+  padding: 16px !important;
+}
+
+.el-message p {
+  margin: 0 auto;
+  line-height: 18px;
+  word-break: keep-all !important;
+  white-space: pre;
+}
+
+input,
+textarea,
+select,
+button {
+  font: 400 14px myfont;
+}
