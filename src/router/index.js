@@ -1,50 +1,50 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import PageOne from '@/pages/PageOne'
-import PageTwo from '@/pages/PageTwo'
-import PageThree from '@/pages/PageThree'
-import PageFour from '@/pages/PageFour'
-import PageFive from '@/pages/PageFive'
-import PageSix from '@/pages/PageSix'
+import Home from '@/pages/Home'
+import AntiAging from '@/pages/AntiAging'
+import Science from '@/pages/Science'
+import Cooperation from '@/pages/Cooperation'
+import Client from '@/pages/Client'
+import ContactUs from '@/pages/ContactUs'
 
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [{
-    name: 'page1',
-    path: '/page1',
-    component: PageOne,
+    name: 'home',
+    path: '/home',
+    component: Home,
     redirect: '/'
   },
   {
-    name: 'page2',
-    path: '/page2',
-    component: PageTwo
+    name: 'client',
+    path: '/client',
+    component: Client
   },
   {
-    name: 'page3',
-    path: '/page3',
-    component: PageThree
+    name: 'antiaging',
+    path: '/antiaging',
+    component: AntiAging
   },
   {
-    name: 'page4',
-    path: '/page4',
-    component: PageFour
+    name: 'science',
+    path: '/science',
+    component: Science
   },
   {
-    name: 'page5',
-    path: '/page5',
-    component: PageFive
+    name: 'cooperation',
+    path: '/cooperation',
+    component: Cooperation
   },
   {
-    name: 'page6',
-    path: '/page6',
-    component: PageSix
+    name: 'contactus',
+    path: '/contactus',
+    component: ContactUs
   },
   {
     name: 'index',
     path: '/',
-    component: PageOne
+    component: Home
   }]
 })

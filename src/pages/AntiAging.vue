@@ -1,5 +1,5 @@
 <template>
-  <div>page2</div>
+  <div>抗衰老服务</div>
 </template>
 
 <script>

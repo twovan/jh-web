@@ -1,5 +1,5 @@
 <template>
-  <div>page4</div>
+  <div>对外合作</div>
 </template>
 
 <script>

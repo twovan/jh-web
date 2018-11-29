@@ -1,5 +1,5 @@
 <template>
-  <div>page5</div>
+  <div>联系我们</div>
 </template>
 
 <script>

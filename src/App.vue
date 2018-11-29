@@ -9,7 +9,11 @@
   </el-footer>
 </el-container>
 </template>
-
+<style lang="scss" scoped>
+.el-main{
+  padding: 0;
+}
+</style>
 <script>
 // 全局图标
 /* eslint-disable */
@@ -23,7 +27,7 @@ import jhFooter from '@/components/jhFooter'
 export default {
   data(){
     return {
-      activeIndex: "1"
+      activeIndex: "home"
     }
   },
   components: {

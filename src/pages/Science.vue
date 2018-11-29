@@ -1,5 +1,5 @@
 <template>
-  <div>page3</div>
+  <div>科学研究</div>
 </template>
 
 <script>
