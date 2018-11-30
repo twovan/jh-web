@@ -1,6 +1,6 @@
 <template>
 <el-header>
-  <!-- <img alt="logo" src="../assets/logo.png"> -->
+    <img alt="logo" id="logo" src="../assets/logo.png">
     <el-menu :default-active="defaultActive" class="" mode="horizontal" @select="handleSelect">
       <el-menu-item index="home">首页</el-menu-item>
       <el-menu-item index="antiaging">抗衰老服务</el-menu-item>
@@ -26,19 +26,36 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+  #logo{
+    width: 120px;
+    margin-left: -450px;
+    position: absolute;
+    left: 50%;
+    top: 35px;
+    z-index: 999;
+  }
   .el-header{
     background-color:#313131;
-    height: 100px;
+    height: 120px !important;
+    position: relative;
     ul{
       background-color: #313131;
       font-weight: bolder;
+      width: 608px;
+      margin: auto;
+      border: 0;
     }
     li{
       color: #ffffff;
+      font-size: 15px;
     }
     .is-active{
       color: #57b1ad;
       border-bottom: 2px #57b1ad solid;
+    }
+    .el-menu-item{
+      height: 120px;
+      line-height: 120px;
     }
   }
 </style>
