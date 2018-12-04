@@ -30,7 +30,6 @@ import jhMFooter from "@/components/jhMFooter";
 export default {
   data() {
     return {
-      // activeIndex: "Index",
       pcshow: false,
       mshow: false
     };
@@ -52,14 +51,17 @@ export default {
   mounted() {
     if (this._isMobile()) {
       console.log("手机端");
-      this.$router.replace("/m_index");
       this.activeIndex="MIndex";
       this.mshow = true;
+      this.pcshow = false;
+      this.$router.replace("/m_index");
     } else {
       console.log("pc端");
-      this.$router.replace("/pc_index");
-       this.activeIndex="Index";
+      this.activeIndex="Index";
+      this.mshow = false;
       this.pcshow = true;
+      this.$router.replace("/pc_index");
+
     }
   },
   created() {}
