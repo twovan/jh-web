@@ -2,12 +2,12 @@
 <el-header>
     <img alt="logo" id="logo" src="../assets/logo.png">
     <el-menu :default-active="defaultActive" class="" mode="horizontal" @select="handleSelect">
-      <el-menu-item index="home">首页</el-menu-item>
-      <el-menu-item index="antiaging">抗衰老服务</el-menu-item>
-      <el-menu-item index="science">科学研究</el-menu-item>
-      <el-menu-item index="cooperation">对外合作</el-menu-item>
-      <el-menu-item index="client">客户服务</el-menu-item>
-      <el-menu-item index="contactus">联系我们</el-menu-item>
+      <el-menu-item index="Index">首页</el-menu-item>
+      <el-menu-item index="Antiaging">抗衰老服务</el-menu-item>
+      <el-menu-item index="Science">科学研究</el-menu-item>
+      <el-menu-item index="Cooperation">对外合作</el-menu-item>
+      <el-menu-item index="Client">客户服务</el-menu-item>
+      <el-menu-item index="Contactus">联系我们</el-menu-item>
     </el-menu>
   </el-header>
 </template>

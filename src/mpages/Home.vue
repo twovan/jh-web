@@ -20,7 +20,7 @@
       </swiper>
     </div>
     <div class="bg">
-      <img alt="logo" src="../assets/home.png" width="40%">
+      <img alt="logo" src="../assets/m-img/home.png" width="40%">
     </div>
   </div>
 </template>
@@ -77,8 +77,8 @@ img {
   background-size: cover;
   text-align: center;
   img {
-    width: 40%;
-    margin-top: 100px;
+    width: 100%;
+    margin-top: 20px;
     margin-bottom: 50px;
   }
 }

@@ -1,50 +1,90 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/pages/Home'
+import Index from '@/pages/Home'
 import AntiAging from '@/pages/AntiAging'
 import Science from '@/pages/Science'
 import Cooperation from '@/pages/Cooperation'
 import Client from '@/pages/Client'
 import ContactUs from '@/pages/ContactUs'
 
+// 手机端
+import MIndex from '@/mpages/Home'
+import MAntiAging from '@/mpages/AntiAging'
+import MScience from '@/mpages/Science'
+import MCooperation from '@/mpages/Cooperation'
+import MClient from '@/mpages/Client'
+import MContactUs from '@/mpages/ContactUs'
+
 Vue.use(Router)
 
 export default new Router({
   mode: 'history',
   routes: [{
-    name: 'home',
+    name: 'Home',
     path: '/home',
-    component: Home,
+    component: Index,
     redirect: '/'
   },
   {
-    name: 'client',
+    name: 'Client',
     path: '/client',
     component: Client
   },
   {
-    name: 'antiaging',
+    name: 'Antiaging',
     path: '/antiaging',
     component: AntiAging
   },
   {
-    name: 'science',
+    name: 'Science',
     path: '/science',
     component: Science
   },
   {
-    name: 'cooperation',
+    name: 'Cooperation',
     path: '/cooperation',
     component: Cooperation
   },
   {
-    name: 'contactus',
+    name: 'Contactus',
     path: '/contactus',
     component: ContactUs
   },
   {
-    name: 'index',
-    path: '/',
-    component: Home
-  }]
+    name: 'Index',
+    path: '/pc_index',
+    component: Index
+  },
+  {
+    name: 'MIndex',
+    path: '/m_index', // 手机端首页
+    component: MIndex
+  },
+
+  {
+    name: 'MAntiAging',
+    path: '/m_antiaging', // 手机端
+    component: MAntiAging
+  },
+  {
+    name: 'MScience',
+    path: '/m_science', // 手机端
+    component: MScience
+  },
+  {
+    name: 'MCooperation',
+    path: '/m_cooperation', // 手机端
+    component: MCooperation
+  },
+  {
+    name: 'MClient',
+    path: '/m_client', // 手机端
+    component: MClient
+  },
+  {
+    name: 'MContactUs',
+    path: '/m_contactUs', // 手机端
+    component: MContactUs
+  }
+  ]
 })
