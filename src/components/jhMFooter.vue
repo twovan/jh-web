@@ -1,5 +1,5 @@
 <template>
-  <div class="footer" id="mfooter">
+  <div id="jhmfooter">
     <span>
       <a href="#">隐私政策</a> |
       <a href="#">使用条款</a> |
@@ -12,7 +12,7 @@
       <a href="www.jhhs-h.com" target="_blank">www.jhhs-h.com</a> 嘉禾弘生
       <br>All Rights Reserved.
     </span>
-    <img alt="logo" id="logo" src="../assets/footer-logo.png">
+    <img alt="logo" id="logo" src="/static/img/pc/footer-logo.png">
   </div>
 </template>
 <script>
@@ -25,19 +25,13 @@ export default {
   methods: {}
 }
 </script>
-<style lang="scss">
-.el-footer {
-  background-color: #777777;
-  padding: 0;
-  text-align: left;
-  color: #b4b4b4;
-  font-size: 10px;
-  // line-height: 100px;
-  padding-left: 10px;
-  height: auto !important;
-  margin-top: -10px;
+<style lang="scss" scoped>
+#jhmfooter {
   position: relative;
-  float: left;
+  width: 100%;
+  height: 100px;
+  font-size: 10px;
+  text-align: left;
   span {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -45,7 +39,7 @@ export default {
   }
   img {
     position: absolute;
-    top: 40px;
+    bottom: 20px;
     right: 20px;
     width: 100px;
   }

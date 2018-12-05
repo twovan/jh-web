@@ -1,10 +1,10 @@
 <template>
   <div class="science">
-    <img alt="logo" id="science1" src="../assets/science-1.png" width="50%">
-    <img alt="logo" id="science2" src="../assets/science-2.png" width="50%">
-    <img alt="logo" id="science3" src="../assets/science-3.png" width="50%">
-    <img alt="logo" id="science4" src="../assets/science-4.png" width="50%">
-    <img alt="logo" id="science5" src="../assets/science-5.png" width="50%">
+    <img alt="1" id="science1" src="/static/img/pc/science-1.png" width="50%">
+    <img alt="2" id="science2" src="/static/img/pc/science-2.png" width="50%">
+    <img alt="3" id="science3" src="/static/img/pc/science-3.png" width="50%">
+    <img alt="4" id="science4" src="/static/img/pc/science-4.png" width="50%">
+    <img alt="5" id="science5" src="/static/img/pc/science-5.png" width="50%">
   </div>
 </template>
 

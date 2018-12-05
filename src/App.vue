@@ -30,7 +30,8 @@ import jhMFooter from "@/components/jhMFooter";
 export default {
   data() {
     return {
-      pcshow: false,
+      activeIndex: "Index",
+      pcshow: true,
       mshow: false
     };
   },
@@ -45,25 +46,33 @@ export default {
       let flag = navigator.userAgent.match(
         /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
       );
-      return flag;
+      if (flag) {
+        this.activeIndex = "MIndex";
+        this.mshow = true;
+        this.pcshow = false;
+        this.$router.replace("/m_index");
+        console.log("手机端");
+        console.log(this.mshow);
+      } else {
+        this.activeIndex = "Index";
+        this.$router.replace("/pc_index");
+        console.log("pc端");
+        console.log(this.mshow);
+      }
     }
   },
   mounted() {
-    if (this._isMobile()) {
-      console.log("手机端");
-      this.activeIndex="MIndex";
-      this.mshow = true;
-      this.pcshow = false;
-      this.$router.replace("/m_index");
-    } else {
-      console.log("pc端");
-      this.activeIndex="Index";
-      this.mshow = false;
-      this.pcshow = true;
-      this.$router.replace("/pc_index");
-
-    }
+    this._isMobile();
   },
   created() {}
 };
 </script>
+<style lang="scss" scoped>
+.el-footer {
+  height: 100px !important;
+  background-color: #777777;
+  text-align: center;
+  color: #b4b4b4;
+  overflow: hidden;
+}
+</style>

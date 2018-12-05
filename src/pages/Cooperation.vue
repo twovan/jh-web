@@ -1,10 +1,10 @@
 <template>
   <div class="cooperation">
     <div id="bg1">
-      <img alt="logo" id="science1" src="../assets/cooperation-bg1.png" width="30%">
+      <img alt="logo" id="science1" src="/static/img/pc/cooperation-bg1.png" width="30%">
     </div>
     <div id="bg2">
-      <img alt="logo" id="science1" src="../assets/cooperation-bg2.png" width="50%">
+      <img alt="logo" id="science1" src="/static/img/pc/cooperation-bg2.png" width="50%">
     </div>
   </div>
 </template>

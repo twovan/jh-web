@@ -1,6 +1,6 @@
 <template>
   <div class="client">
-    <img alt="logo" id="logo" src="../assets/client-1.png" width="60%">
+    <img alt="logo" id="logo" src="/static/img/pc/client-1.png" width="60%">
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
 .client {
   text-align: center;
   overflow: hidden;
-  background: url("/static/img/client.png") no-repeat;
+  background: url("/static/img/pc/client.png") no-repeat;
   background-size: cover;
   height: 800px;
   img {

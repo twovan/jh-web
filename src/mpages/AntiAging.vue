@@ -1,6 +1,6 @@
 <template>
   <div class="antiaging">
-    <img alt="logo" src="../assets/m-img/antiaging.png">
+    <img alt="logo" src="/static/img/mobile/antiaging.png">
   </div>
 </template>
 

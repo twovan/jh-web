@@ -1,6 +1,6 @@
 <template>
 <el-header>
-    <img alt="logo" id="logo" src="../assets/logo.png">
+    <img alt="logo" id="logo" src="/static/img/pc/logo.png">
     <el-menu :default-active="defaultActive" class="" mode="horizontal" @select="handleSelect">
       <el-menu-item index="Index">首页</el-menu-item>
       <el-menu-item index="Antiaging">抗衰老服务</el-menu-item>

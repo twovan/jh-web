@@ -1,10 +1,16 @@
 <template>
-  <div class="footer">
+  <div id="jhfooter">
     <span>
-      <a href="#">隐私政策</a>   |   <a href="#">使用条款</a>   |   <a href="#">法律信息</a>   |   <a href="#">网站地图</a>   |   <a href="#">友情链接</a><br><br>
-      Copyright © 2002-2018 <a href="www.jhhs-h.com" target="_blank">www.jhhs-h.com</a> 嘉禾弘生 All Rights Reserved.
+      <a href="#">隐私政策</a> |
+      <a href="#">使用条款</a> |
+      <a href="#">法律信息</a> |
+      <a href="#">网站地图</a> |
+      <a href="#">友情链接</a>
+      <br>
+      <br>Copyright © 2002-2018
+      <a href="www.jhhs-h.com" target="_blank">www.jhhs-h.com</a> 嘉禾弘生 All Rights Reserved.
+      <img alt="logo" id="logo" src="/static/img/pc/footer-logo.png">
     </span>
-     <img alt="logo" id="logo" src="../assets/footer-logo.png">
   </div>
 </template>
 <script>
@@ -17,30 +23,35 @@ export default {
   methods: {}
 }
 </script>
-<style lang="scss">
-.el-footer {
-  background-color: #777777;
-  padding: 0;
-  text-align: center;
-  color: #b4b4b4;
-  // line-height: 100px;
+<style lang="scss" scoped>
+el-footer {
   height: 100px !important;
-  margin-top: -10px;
+}
+#jhfooter {
   position: relative;
-  float: left;
+  width: 100%;
+  height: 100px;
   span {
-    margin-top: 20px;
+    height: 60px;
     display: block;
+    line-height: 20px;
+    margin: 20px auto;
+    width: 900px;
+
+    img {
+      position: absolute;
+      bottom: 30px;
+      right: 50px;
+      width: 150px;
+    }
   }
-  img{
-    position: absolute;
-    top: 12.5px;
-    right: 50px;
-    width: 150px;
-  }
+
   a {
     text-decoration: underline;
   }
-  a:link,a:visited{color:#b4b4b4;}
+  a:link,
+  a:visited {
+    color: #b4b4b4;
+  }
 }
 </style>

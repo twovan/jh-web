@@ -1,6 +1,6 @@
 <template>
   <div class="antiaging">
-    <img alt="logo" src="../assets/antiaging.png" width="60%">
+    <img alt="logo" src="/static/img/pc/antiaging.png" width="60%">
   </div>
 </template>
 

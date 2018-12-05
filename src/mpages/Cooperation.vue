@@ -1,10 +1,10 @@
 <template>
   <div class="cooperation">
     <div id="bg1">
-      <img alt="logo" id="science1" src="../assets/cooperation-bg1.png" width="80%">
+      <img alt="logo" id="science1" src="/static/img/mobile/cooperation-bg1.png" width="80%">
     </div>
     <div id="bg2">
-      <img alt="logo" id="science1" src="../assets/cooperation-bg2.png" width="90%">
+      <img alt="logo" id="science1" src="/static/img/mobile/cooperation-bg2.png" width="90%">
     </div>
   </div>
 </template>
@@ -22,6 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 .cooperation {
+  overflow: hidden;
   text-align: center;
   div {
     width: 100%;

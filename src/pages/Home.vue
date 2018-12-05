@@ -3,16 +3,16 @@
     <div id="container">
       <swiper :options="swiperOption" ref="mySwiper">
         <swiper-slide class="swiper-slide games">
-          <img src="../assets/homebanner1.png" alt>
+          <img src="/static/img/pc/homebanner1.png" alt>
         </swiper-slide>
         <swiper-slide class="swiper-slide games">
-          <img src="../assets/homebanner1.png" alt>
+          <img src="/static/img/pc/homebanner1.png" alt>
         </swiper-slide>
         <swiper-slide class="swiper-slide games">
-          <img src="../assets/homebanner1.png" alt>
+          <img src="/static/img/pc/homebanner1.png" alt>
         </swiper-slide>
         <swiper-slide class="swiper-slide games">
-          <img src="../assets/homebanner1.png" alt>
+          <img src="/static/img/pc/homebanner1.png" alt>
         </swiper-slide>
         <div class="swiper-pagination" slot="pagination"></div>
         <div class="swiper-button-prev" slot="button-prev"></div>
@@ -20,7 +20,7 @@
       </swiper>
     </div>
     <div class="bg">
-      <img alt="logo" src="../assets/home.png" width="40%">
+      <img alt="logo" src="/static/img/pc/home.png" width="40%">
     </div>
   </div>
 </template>
@@ -72,8 +72,7 @@ img {
 .bg {
   margin-top: -10px;
   width: 100%;
-  // height: 800px;
-  background: url("/static/img/home-bg.png") no-repeat;
+  background: url("/static/img/pc/home-bg.png") no-repeat;
   background-size: cover;
   text-align: center;
   img {
