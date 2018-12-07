@@ -1,26 +1,28 @@
 <template>
-  <div class="block">
-    <div id="container">
-      <swiper :options="swiperOption" ref="mySwiper">
-        <swiper-slide class="swiper-slide games">
-          <img src="/static/img/pc/homebanner1.png" alt>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide games">
-          <img src="/static/img/pc/homebanner1.png" alt>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide games">
-          <img src="/static/img/pc/homebanner1.png" alt>
-        </swiper-slide>
-        <swiper-slide class="swiper-slide games">
-          <img src="/static/img/pc/homebanner1.png" alt>
-        </swiper-slide>
-        <div class="swiper-pagination" slot="pagination"></div>
-        <div class="swiper-button-prev" slot="button-prev"></div>
-        <div class="swiper-button-next" slot="button-next"></div>
-      </swiper>
-    </div>
-    <div class="bg">
-      <img alt="logo" src="/static/img/pc/home.png" width="40%">
+  <div class="home">
+    <div class="block">
+      <div id="container">
+        <swiper :options="swiperOption" ref="mySwiper">
+          <swiper-slide class="swiper-slide games">
+            <img src="/static/img/pc/homebanner1.png" alt>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide games">
+            <img src="/static/img/pc/homebanner1.png" alt>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide games">
+            <img src="/static/img/pc/homebanner1.png" alt>
+          </swiper-slide>
+          <swiper-slide class="swiper-slide games">
+            <img src="/static/img/pc/homebanner1.png" alt>
+          </swiper-slide>
+          <div class="swiper-pagination" slot="pagination"></div>
+          <div class="swiper-button-prev" slot="button-prev"></div>
+          <div class="swiper-button-next" slot="button-next"></div>
+        </swiper>
+      </div>
+      <div class="bg">
+        <img alt="logo" src="/static/img/pc/home.png" width="40%">
+      </div>
     </div>
   </div>
 </template>
@@ -65,20 +67,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-img {
-  width: 100%;
-  height: auto;
-}
-.bg {
-  margin-top: -10px;
-  width: 100%;
-  background: url("/static/img/pc/home-bg.png") no-repeat;
-  background-size: cover;
-  text-align: center;
+.home {
+  overflow: hidden;
   img {
-    width: 40%;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    width: 100%;
+    height: auto;
+  }
+  .bg {
+    margin-top: -10px;
+    width: 100%;
+    background: url("/static/img/pc/home-bg.png") no-repeat;
+    background-size: cover;
+    text-align: center;
+    img {
+      width: 40%;
+      margin-top: 100px;
+      margin-bottom: 50px;
+    }
   }
 }
 </style>
