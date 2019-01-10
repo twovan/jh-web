@@ -4,7 +4,7 @@
       <img alt="logo" id="science1" src="/static/img/pc/contactus-1.png" width="100%">
     </div>
     <div>
-      <img alt="logo" id="science2" src="/static/img/pc/contactus-2.png" width="45%">
+      <img alt="logo" id="science2" src="/static/img/pc/contactus-2.png" width="70%">
     </div>
   </div>
 </template>
